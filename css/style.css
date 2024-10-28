@@ -1,7 +1,7 @@
 /* OVERALL PARAMETERS */
 * {
-    margin: 0; /* Removes default margin from all elements */
-    padding: 0; /* Removes default padding from all elements */
+    margin: 0; 
+    padding: 0; 
     box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
@@ -26,13 +26,17 @@
 #todo {
     display: flex; /* Uses flexbox for layout */
     flex-direction: column; /* Arranges child elements in a column */
-    padding: 0 0.8em; /* Adds horizontal padding to the todo section */
+}
+
+#todoCards {
+    display: flex; /* Allows the cards to be displayed side by side */
+    flex-wrap: wrap; /* Allows the cards to wrap onto the next line when needed */
+    padding: 0.5em;
 }
 
 .todoCard {
     position: relative; /* Positions the card relative to its normal position */
-    display: inline-block; /* Allows the cards to sit next to each other */
-    margin: 5px 5px 0 0; /* Adds margin around each todo card */
+    margin: 0 10px 5px; 
 }
 
 .task {
@@ -45,6 +49,7 @@
 #btn {
     padding: 0.3em; /* Adds padding inside the button */
     cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 10px;
 }
 
 .delBtn {
