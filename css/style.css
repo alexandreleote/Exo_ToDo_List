@@ -1,0 +1,55 @@
+/* OVERALL PARAMETERS */
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* WRAPPER STYLES */
+#wrapper {
+    width: 100vw; /* Sets the wrapper to full viewport width */
+    padding: 10px; /* Adds padding around the wrapper */
+}
+
+#wrapper h1 {
+    font-size: 3em; /* Increases the font size of the main heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* COUNT STYLES */
+#count {
+    margin: 10px; /* Adds margin around the count element */
+    font-weight: bold; /* Makes the count text bold */
+}
+
+/* TODO SECTION STYLES */
+#todo {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges child elements in a column */
+    padding: 0 0.8em; /* Adds horizontal padding to the todo section */
+}
+
+.todoCard {
+    position: relative; /* Positions the card relative to its normal position */
+    display: inline-block; /* Allows the cards to sit next to each other */
+    margin: 5px 5px 0 0; /* Adds margin around each todo card */
+}
+
+.task {
+    resize: none; /* Prevents resizing of the task text area */
+    width: 100%; /* Sets the width of the task input to fill the card */
+    padding: 10px; /* Adds padding inside the task input */
+}
+
+/* BUTTON STYLES */
+#btn {
+    padding: 0.3em; /* Adds padding inside the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.delBtn {
+    position: absolute; /* Positions the delete button relative to the todo card */
+    bottom: 10px; /* Positions the button 10px from the bottom of the card */
+    right: 10px; /* Positions the button 10px from the right of the card */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
