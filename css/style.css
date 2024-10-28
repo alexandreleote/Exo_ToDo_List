@@ -58,3 +58,23 @@
     right: 10px; /* Positions the button 10px from the right of the card */
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
+
+/* Delete All Button */
+
+#delete-all-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #9e0000;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+
+#delete-all-btn:hover {
+    background-color: #ca0202;
+
+}

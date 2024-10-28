@@ -32,9 +32,21 @@ function deleteTask(task) {
     updateCount(); // update count when removing a task
 }
 
-/* UPDATE COUNT */
-const countText = document.querySelector('#count'); // target the count id 
+/* DELETE ALL TASKS */
 
+const delAllBtn = document.querySelector("#delete-all-btn");
+delAllBtn.addEventListener('click', deleteAllTasks);
+
+function deleteAllTasks() {
+    while (tasksContainer.firstChild) {// target the first child of the container while there is one
+        tasksContainer.removeChild(tasksContainer.firstChild); // removes each task card
+    }
+    updateCount(); // update count after deletion
+}
+
+/* UPDATE COUNT */
+
+const countText = document.querySelector('#count'); // target the count id 
 
 function updateCount() {
     let countNumber = tasksContainer.children.length; // count the lenght of the different tasks present in the container
