@@ -62,7 +62,7 @@ Concepts :
 ## 🚀 Structure du projet
 
 ```
-todo-list/
+Exo_ToDo_List/
 │
 ├── index.html
 ├── README.md
